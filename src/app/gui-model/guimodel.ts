@@ -288,9 +288,9 @@ export class GuiModel {
                             "search": true,
                             "url": "/friend",
                             "page": {
-                                "page": "viewfriendpage"
+                                page: "viewfriendpage",
                             }
-                        },              
+                        },
                     ]
                 },
                 {
@@ -349,49 +349,29 @@ export class GuiModel {
                     ]
                 },
                 {
-"id": "viewfriendpage",
+                    "id": "viewfriendpage",
+                    "elementList": [
+                        {
+                        "type": "backbutton",
+                        },
+                    ]
+                },
+                {
+                    "id": "activitypage",
                     "elementList": [
                         {
                             "type": "backbutton",
                         },
                         {
                             "type": "newButton",
-                            "name": "NewFriend",
-                            "icon": "fa-user",
+                            "name": "NewActivity",
+                            "icon": "fa-calendar",
                             "color": "green",
-                            "width": 2,
                             "form": {
-                                "form": "FriendForm"
+                                "form": "ActivityForm"
                             }
                         },
                         {
-                            "type": "list",
-                            "icon": "fa-user",
-                            "color": "blue",
-                            "search": true,
-                            "url": "/friend",
-                            "form": {
-                                "form": "FrienForm"
-                            }
-                        },
-                    ]
-																				},
-                {
-                    "id": "activitypage",
-                    "elementList": [
-                        {
-                        "type": "backbutton",
-                    }, 
-                    {
-                        "type": "newButton", 
-                        "name": "NewActivity",
-                        "icon": "fa-calendar", 
-                        "color": "green", 
-                        "form": {
-                            "form": "ActivityForm"
-                        }
-                    },
-                    {
                             "type": "list",
                             "icon": "fa-calendar",
                             "color": "pumpkin",
@@ -401,7 +381,7 @@ export class GuiModel {
                                 "form": "ActivityForm"
                             }
                         },
-                ]
+                    ]
                 },
             ]
         }
